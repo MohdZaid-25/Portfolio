@@ -1,0 +1,168 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(24, 24, 24); /* Dark background */
+    color: rgb(241, 241, 241); /* Light text for contrast */
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* Container for all sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: rgb(30, 30, 30); /* Dark grey background */
+    color: rgb(241, 241, 241); /* Light text */
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header hover effect */
+header:hover {
+    background: rgb(42, 42, 42); /* Slightly lighter dark grey */
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255); /* White for heading */
+    transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* About Section */
+section {
+    margin-bottom: 50px;
+    padding: 40px 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Dark Background for all sections */
+section.bg-dark {
+    background-color: rgb(18, 18, 18); /* Darker section background */
+}
+
+/* Customize section headings */
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(211, 211, 211); /* Light grey heading */
+    transition: color 0.3s ease;
+}
+
+section:hover h2 {
+    color: rgb(130, 210, 193); /* Mint green color on hover */
+}
+
+/* Section content text */
+section p {
+    font-size: 1.2em;
+    color: rgb(224, 224, 224); /* Lighter grey text for readability */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto;
+    font-weight: 500;
+}
+
+/* Accent Colors */
+.text-accent {
+    color: rgb(245, 166, 35); /* Vibrant coral/peach for links and accents */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Accent Hover Effect */
+.text-accent:hover {
+    color: rgb(130, 210, 193); /* Soft mint color on hover */
+}
+
+/* Green Shades */
+.text-green-light {
+    color: rgb(102, 255, 178); /* Soft fresh green */
+}
+
+.text-green-dark {
+    color: rgb(0, 128, 0); /* Dark green */
+}
+
+/* Blue Shades */
+.text-blue-light {
+    color: rgb(135, 206, 250); /* Light sky blue */
+}
+
+.text-blue-dark {
+    color: rgb(0, 0, 139); /* Dark midnight blue */
+}
+
+/* Red Shades */
+.text-red-light {
+    color: rgb(255, 99, 71); /* Coral red for vibrant accents */
+}
+
+.text-red-dark {
+    color: rgb(139, 0, 0); /* Deep dark red */
+}
+
+/* Footer Section */
+footer {
+    background-color: rgb(44, 44, 44); /* Dark footer background */
+    color: rgb(241, 241, 241); /* Light text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Smooth Scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation on Scroll (when sections appear in view) */
+.animate__animated {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.animate__animated.animate__fadeIn {
+    opacity: 1 !important;
+}
+
+.animate__animated.animate__delay-1s {
+    animation-delay: 1s !important;
+}
+
+.animate__animated.animate__delay-2s {
+    animation-delay: 2s !important;
+}
